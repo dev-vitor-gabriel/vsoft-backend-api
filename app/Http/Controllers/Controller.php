@@ -8,9 +8,9 @@ use Illuminate\Routing\Controller as BaseController;
 
 /**
  * @OA\Info(
- *     title="API OmniGest",
+ *     title="API Documentation",
  *     version="1.0",
- *     description="Documentação da API Omnigest"
+ *     description="Documentação da API"
  * )
  */
 class Controller extends BaseController
