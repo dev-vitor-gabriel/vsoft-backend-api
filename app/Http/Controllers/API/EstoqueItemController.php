@@ -74,7 +74,7 @@ class EstoqueItemController extends Controller
 
     /**
      * @OA\Post(
-     *     path="/estoque",
+     *     path="/estoqueItem",
      *     summary="Cria um novo estoque para o produto enviado",
      *     tags={"EstoqueItem"},
      *     @OA\RequestBody(
