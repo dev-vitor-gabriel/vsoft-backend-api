@@ -98,7 +98,7 @@ return [
             /*
              * Edit to set the api's base path
              */
-            'base' => env('L5_SWAGGER_BASE_SERVER_URL', env('SWAGGER_API_URL', 'http://127.0.0.1:8000/api')),
+            'base' => env('L5_SWAGGER_BASE_SERVER_URL', env('SWAGGER_API_URL', 'https://vsoft-backend-api-production.up.railway.app/api')),
 
             /*
              * Absolute path to directories that should be excluded from scanning

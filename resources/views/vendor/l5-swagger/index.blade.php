@@ -135,7 +135,7 @@
             oauth2RedirectUrl: "{{ route('l5-swagger.'.$documentation.'.oauth2_callback', [], $useAbsolutePath) }}",
             "servers": [
                 {
-                    "url": "{{ env('L5_SWAGGER_BASE_API_URL', 'http://127.0.0.1:8000/teste') }}",
+                    "url": "{{ env('L5_SWAGGER_BASE_API_URL', 'https://vsoft-backend-api-production.up.railway.app/teste') }}",
                     "description": "API Production"
                 }
             ],
