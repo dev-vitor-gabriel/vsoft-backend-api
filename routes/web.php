@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return response()->json([
+        'status' => 'ok',
+        'environment' => app()->environment(),
+    ]);
 });
 
 Route::get('/api/docs/api-docs.json', function () {
