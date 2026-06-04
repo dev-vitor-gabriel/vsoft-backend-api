@@ -54,10 +54,11 @@ class UsuarioMenuController extends Controller
 
         $menusParaRemover = array_diff($existingRecords, $request->id_menu_usm);
         RelUsuarioMenu::where('id_user', $request->id_user)
-            ->whereIn('id_menu_usm', $menusParaRemover)
-            ->delete();
+        ->whereIn('id_menu_usm', $menusParaRemover)
+        ->delete();
 
         $menusParaAdicionar = array_diff($request->id_menu_usm, $existingRecords);
+
         $rel_empresa_menu = [];
         foreach ($menusParaAdicionar as $menu_id) {
             $rel_empresa_menu[] = RelUsuarioMenu::create([

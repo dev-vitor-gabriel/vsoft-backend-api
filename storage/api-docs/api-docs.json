@@ -648,6 +648,46 @@
             }
         },
         "/empresa": {
+            "get": {
+                "tags": [
+                    "Empresa"
+                ],
+                "summary": "Lista todas as empresas",
+                "operationId": "eebbaf8b927140cc1f543d0be0d5030a",
+                "parameters": [
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": "Quantidade de registros por página",
+                        "schema": {
+                            "type": "integer",
+                            "default": 10
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Filtro para busca",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "page_number",
+                        "in": "query",
+                        "description": "Número da página",
+                        "schema": {
+                            "type": "integer",
+                            "default": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de empresas retornada com sucesso"
+                    }
+                }
+            },
             "post": {
                 "tags": [
                     "Empresa"
@@ -718,48 +758,6 @@
                     },
                     "422": {
                         "description": "Erro de validação"
-                    }
-                }
-            }
-        },
-        "/empresas": {
-            "get": {
-                "tags": [
-                    "Empresa"
-                ],
-                "summary": "Lista todas as empresas",
-                "operationId": "7d73e5b455f07ff5c2e3a39b08ddedbd",
-                "parameters": [
-                    {
-                        "name": "per_page",
-                        "in": "query",
-                        "description": "Quantidade de registros por página",
-                        "schema": {
-                            "type": "integer",
-                            "default": 10
-                        }
-                    },
-                    {
-                        "name": "filter",
-                        "in": "query",
-                        "description": "Filtro para busca",
-                        "schema": {
-                            "type": "string"
-                        }
-                    },
-                    {
-                        "name": "page_number",
-                        "in": "query",
-                        "description": "Número da página",
-                        "schema": {
-                            "type": "integer",
-                            "default": 1
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "Lista de empresas retornada com sucesso"
                     }
                 }
             }

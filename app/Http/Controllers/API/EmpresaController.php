@@ -107,7 +107,7 @@ class EmpresaController extends Controller
 
     /**
      * @OA\Get(
-     *     path="/empresas",
+     *     path="/empresa",
      *     summary="Lista todas as empresas",
      *     tags={"Empresa"},
      *     @OA\Parameter(
