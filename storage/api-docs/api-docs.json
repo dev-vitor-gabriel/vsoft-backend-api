@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "https://vsoft-backend-api-production.up.railway.app/api/documentation"
+            "url": "https://vsoft-backend-api-production.up.railway.app/api"
         }
     ],
     "paths": {
